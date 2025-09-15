@@ -1,0 +1,381 @@
+h1 {
+  font-size: 2em;
+  color: black;
+  text-align: left;
+  margin-top: 20px;
+  align-items: left;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.search-bar {
+  justify-content: center;
+  margin-top: 20px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.cart {
+  margin-top: 20px;
+  position: relative;
+  margin-right: 20px;
+}
+.cart span {
+  width: 10px;
+  display: inline-block;
+  text-align: center;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  padding: 1px 2px;
+  position: absolute;
+  top: 10px;
+  right: -15px;
+  justify-content: center;
+  align-items: center;
+  height: 15px;
+  font-size: 12px;
+}
+
+.search-bar button {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.search-bar button:hover {
+  background-color: darkcyan;
+}
+.search-bar input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+  width: 200px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.search-bar input:focus {
+  outline: none;
+  border-color: darkcyan;
+}
+.list-product .product img {
+  width: 20%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  filter: drop-shadow(0 50px 20px #0009);
+}
+.list-product .product img:hover {
+  transform: scale(1.05);
+}
+.list-product {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  width: 600px;
+}
+.list-product .product {
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  width: 400px;
+}
+.list-product .product:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.list-product .product h2 {
+  font-size: 1.2em;
+  color: black;
+  margin: 10px 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 500px;
+  margin-top: 40px;
+}
+.list-product .product p {
+  font-size: 0.9em;
+  color: #555;
+  margin: 5px 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.list-product .product button {
+  background-color: darkcyan;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.list-product .product button:hover {
+  background-color: darkgray;
+}
+footer {
+  background-color: skyblue;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-top: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+footer p {
+  margin: 5px 0;
+}
+footer a {
+  color: darkcyan;
+  text-decoration: none;
+}
+.cart-tab {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 450px;
+  height: 100%;
+  background-color: darkgray;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 70px 1fr 70px;
+}
+.cart-tab h1 {
+  font-size: 1.5em;
+  color: black;
+
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.cart-tab .button {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: black;
+  border: none;
+  height: 10px;
+  margin-top: 360px;
+  justify-content: space-between;
+}
+.close-cart {
+  background-color: cadetblue;
+  color: white;
+  cursor: pointer;
+  border-radius: 2px;
+  border: solid 1px darkcyan;
+}
+.card-cart .button :hover {
+  background-color: darkgray;
+}
+
+.checkout {
+  background-color: cadetblue;
+  color: white;
+  cursor: pointer;
+  border-radius: 2px;
+  border: solid 1px darkcyan;
+}
+.cart-tab .cart-items .item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.cart-tab .cart-items .item {
+  display: grid;
+  grid-template-columns: 70px 150px 50px 1fr;
+  gap: 5px;
+  align-items: center;
+}
+
+.cart-tab .item:nth-child(even) {
+  background-color: #e0e0e0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #f2fcfe, #e0f7fa);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+/* Initial hidden state */
+.product {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Final state after animation starts */
+.product.slide-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.product {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.product.slide-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (max-width: 600px) {
+  header {
+    font-size: 1rem;
+  }
+
+  .product h2 {
+    font-size: 1.1rem;
+  }
+
+  .product p {
+    font-size: 0.9rem;
+  }
+
+  .cart-tab {
+    width: 90vw;
+    grid-template-columns: 1fr;
+  }
+
+  .cart-tab .item {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cart-tab .item .image img {
+    max-width: 100px;
+  }
+}
+
+.cart-tab .cart-items {
+  overflow-y: auto;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+.cart-tab .cart-items .item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.cart-tab .cart-items .item:last-child {
+  border-bottom: none;
+}
+.cart-tab .cart-items .item h2 {
+  font-size: 1.1em;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.cart-tab .cart-items .item p {
+  font-size: 0.9em;
+  color: #555;
+  margin: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.cart-tab .cart-items .item button {
+  background-color: darkcyan;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.cart-tab .cart-items .item button:hover {
+  background-color: darkgray;
+}
+.cart-tab .cart-items .item .image {
+  flex-shrink: 0;
+}
+
+.cart-tab .cart-items .item .image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.cart-tab .cart-items .item .quantity {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cart-tab .cart-items .item .quantity input {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.cart-tab .cart-items .item .quantity button {
+  background-color: darkcyan;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.cart-tab .cart-items .item .quantity button:hover {
+  background-color: darkgray;
+}
+.cart-tab .cart-items .item .total {
+  font-weight: bold;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.cart-tab .cart-items .item .total span {
+  color: indianred;
+  font-size: 1.2em;
+}
+.cart-tab .cart-items .item .total span::before {
+  content: "$";
+}
+.cart-tab .cart-items .item .total span::after {
+  content: " USD";
+}
+
+.cart-tab .cart-items .item .remove {
+  background-color: indianred;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.cart-tab .cart-items .item .remove:hover {
+  background-color: darkgray;
+}
+.cart-tab .cart-items .item .remove:focus {
+  outline: none;
+  box-shadow: 0 0 5px darkcyan;
+}
+.cart-tab .cart-items .item .remove:active {
+  background-color: indianred;
+  transform: scale(0.95);
+}
+.cart-tab .cart-items .item .remove:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.cart-tab .cart-items .item .remove:disabled:hover {
+  background-color: #ccc;
+}
+.cart-tab .cart-items .item .remove:disabled:focus {
+  box-shadow: none;
+}
